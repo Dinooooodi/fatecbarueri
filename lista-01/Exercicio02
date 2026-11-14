@@ -1,19 +1,19 @@
-public class Ponto2D {
+public class Exercicio02 {
 
     private double x;
     private double y;
 
-    public Ponto2D() {
+    public Exercicio02() {
         this.x = 0;
         this.y = 0;
     }
 
-    public Ponto2D(double x, double y) {
+    public Exercicio02(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public Ponto2D(Ponto2D outroPonto) {
+    public Exercicio02(Exercicio02 outroPonto) {
         this.x = outroPonto.x;
         this.y = outroPonto.y;
     }
@@ -44,12 +44,12 @@ public class Ponto2D {
         this.y = y;
     }
 
-    public void mover(Ponto2D outroPonto) {
+    public void mover(Exercicio02 outroPonto) {
         this.x = outroPonto.x;
         this.y = outroPonto.y;
     }
 
-    public boolean equals(Ponto2D outroPonto) {
+    public boolean equals(Exercicio02 outroPonto) {
         return this.x == outroPonto.x
                 && this.y == outroPonto.y;
     }
@@ -59,7 +59,7 @@ public class Ponto2D {
         return "(" + x + ", " + y + ")";
     }
 
-    public double distancia(Ponto2D outroPonto) {
+    public double distancia(Exercicio02 outroPonto) {
 
         double dx = outroPonto.x - this.x;
         double dy = outroPonto.y - this.y;
@@ -67,7 +67,31 @@ public class Ponto2D {
         return Math.sqrt(dx * dx + dy * dy);
     }
 
-    public Ponto2D clone() {
-        return new Ponto2D(this.x, this.y);
+    public Exercicio02 clone() {
+        return new Exercicio02(this.x, this.y);
+    }
+
+    public static void main(String[] args) {
+
+        Exercicio02 ponto1 =
+                new Exercicio02(2, 3);
+
+        Exercicio02 ponto2 =
+                new Exercicio02(5, 7);
+
+        System.out.println("Ponto 1: "
+                + ponto1);
+
+        System.out.println("Ponto 2: "
+                + ponto2);
+
+        System.out.println("Distância: "
+                + ponto1.distancia(ponto2));
+
+        Exercicio02 copia =
+                ponto1.clone();
+
+        System.out.println("Cópia: "
+                + copia);
     }
 }
