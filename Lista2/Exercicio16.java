@@ -1,4 +1,4 @@
-public Class Exercicio16 {
+public class Exercicio16 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
