@@ -1,5 +1,4 @@
-// Exercício 4: Reta representada por y = ax + b
-public class Exercicio04 {
+public Class Exercicio04 {
     private double a; // coeficiente angular
     private double b; // coeficiente linear
 
