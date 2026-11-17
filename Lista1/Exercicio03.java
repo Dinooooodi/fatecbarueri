@@ -1,4 +1,4 @@
-public class Exercicio03 {
+public Class Exercicio03 {
 
     private double real;
     private double imaginario;
