@@ -1,4 +1,4 @@
-public Class Exercicio08 {
+public class Exercicio08 {
     public static void main(String[] args) {
         Pessoa avo = new Pessoa("Carlos");
         Pessoa mae = new Pessoa("Ana", avo, null);
