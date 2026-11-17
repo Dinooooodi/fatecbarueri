@@ -1,4 +1,4 @@
-public class Exercicio01 {
+public Class Exercicio01 {
 
     private int valor;
 
