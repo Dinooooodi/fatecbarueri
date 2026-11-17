@@ -1,4 +1,4 @@
-public Class Exercicio05 {
+public class Exercicio05 {
     private double raio;
     private double x;
     private double y;
