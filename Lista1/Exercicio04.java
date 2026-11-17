@@ -1,4 +1,4 @@
-public Class Exercicio04 {
+public class Exercicio04 {
     private double a; // coeficiente angular
     private double b; // coeficiente linear
 
